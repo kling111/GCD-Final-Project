@@ -15,7 +15,8 @@ Additonal information about the projects and the detailed steps taken.
 - x_test.txt
 - y_test.txt
 
-## Section 2. In this section, I extracted only the measurements for mean and standard deviation. To do this, I read throught the appropriate table looking for keywords such as "mean()" or "std()".
+## Section 2. 
+In this section, I extracted only the measurements for mean and standard deviation. To do this, I read throught the appropriate table looking for keywords such as "mean()" or "std()".
 
 ## Section 3. This section requires you to find the descriptive activity names and subset them.
 For this I read through the text file "activity_labels.txt" and looked for the appropriate names.
