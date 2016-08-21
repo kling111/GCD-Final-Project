@@ -52,7 +52,7 @@ large <- subset(large, select = selected)
 
 ## ---------------------------------------------------------------
 
-## Now read the appropriate names from file “activity_labels.txt”
+## Now read the appropriate names from file â€œactivity_labels.txtâ€
 
 actNames <- read.table(file.path(dir, "activity_labels.txt"),header = FALSE)
 
@@ -72,11 +72,6 @@ library(plyr)
 secondLarge <- aggregate(. ~Subject + Activity, large, mean)
 secondLarge <-secondLarge[order(secondLarge$Subject,secondLarge$Activity),]
 write.table(secondLarge, file = "courseraGCDdataSet.txt",row.name=FALSE)
-
-## Produce Codebook describing the variables
-
-library(knitr)
-knit2html("codebook.Rmd")
 
 return(secondLarge)
 
